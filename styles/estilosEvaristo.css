@@ -1,0 +1,548 @@
+body {
+  background: radial-gradient(circle at 50% -20.71%,
+      #ff57d2 0,
+      #ff4edb 12.5%,
+      #f046e3 25%,
+      #d63feb 37.5%,
+      #b53cf2 50%,
+      #8c3df9 62.5%,
+      #4f40ff 75%,
+      #0046ff 87.5%,
+      #004bff 100%);
+  background-repeat: no-repeat;
+  min-height       : 100vh;
+}
+
+
+h1 {
+  font-family: 'Tourney', cursive;
+  text-align : center;
+}
+
+.container {
+  position       : relative;
+  width          : 100%;
+  height         : 100%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  padding        : 4rem 0;
+}
+
+.cuerpo {
+  position             : relative;
+  width                : 126px;
+  height               : 180px;
+  border               : 4px solid #000;
+  background-color     : #fff3a7;
+  -moz-border-radius   : 50% 50% 50% 50% / 60% 60% 40% 40%;
+  -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border-radius        : 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.ojos {
+  position: absolute;
+  margin  : 50px auto;
+  width   : 100px;
+  height  : 50px;
+  left    : 13px;
+  z-index : 10;
+}
+
+.ojoDerecho {
+  position     : relative;
+  background   : #111;
+  border       : 5px solid #000;
+  width        : 5px;
+  height       : 5px;
+  margin-right : 50px;
+  border-radius: 65%;
+  display      : inline-block;
+}
+
+.ojoIzquierdo {
+  position     : relative;
+  background   : #111;
+  border       : 5px solid #000;
+  width        : 5px;
+  height       : 5px;
+  bottom       : 19px;
+  margin-left  : 84px;
+  border-radius: 65%;
+  display      : inline-block;
+}
+
+.pupila {
+  position     : absolute;
+  background   : #ffffff;
+  width        : 5px;
+  height       : 5px;
+  border-radius: 65%;
+}
+
+.nariz {
+  position     : absolute;
+  width        : 40px;
+  height       : 20px;
+  top          : 65px;
+  left         : 40px;
+  background   : #fef3a9;
+  border       : 3px solid #000;
+  border-radius: 50%;
+  z-index      : 10;
+  border-top   : transparent;
+}
+
+.boca {
+  position     : absolute;
+  background   : transparent;
+  width        : 60px;
+  height       : 20px;
+  top          : 90px;
+  left         : 34px;
+  border-radius: 47%;
+  border-bottom: 5px solid #000;
+  z-index      : 10;
+}
+
+.mejillaPrimera {
+  width        : 5px;
+  height       : 2px;
+  background   : transparent;
+  border       : 2px solid #000;
+  position     : relative;
+  bottom       : 2px;
+  top          : 11.5px;
+  right        : 4px;
+  z-index      : 10;
+  border-bottom: 0px solid transparent;
+  border-radius: 70px;
+}
+
+.mejillaSegunda {
+  width        : 5px;
+  height       : 2px;
+  background   : transparent;
+  border       : 2px solid #000;
+  position     : relative;
+  top          : 7px;
+  bottom       : 1px;
+  left         : 55px;
+  z-index      : 10;
+  border-bottom: 0px solid transparent;
+  border-radius: 70px;
+}
+
+.barba {
+  position     : absolute;
+  background   : #c6c2d0;
+  width        : 44px;
+  height       : 39px;
+  top          : 88px;
+  left         : 42.5px;
+  border-radius: 45%;
+  clip-path    : polygon(50% 0%,
+      80% 10%,
+      100% 35%,
+      100% 70%,
+      80% 90%,
+      50% 100%,
+      20% 90%,
+      0% 70%,
+      0% 35%,
+      20% 10%);
+  z-index: 10;
+}
+
+.sombrero {
+  position     : relative;
+  background   : #000;
+  width        : 125px;
+  height       : 50px;
+  left         : 1px;
+  top          : 8px;
+  bottom       : 17px;
+  z-index      : 10;
+  border-radius: 50%;
+  transform    : rotate3d(1, 0, 0, 60deg);
+}
+
+.cintaBlanca {
+  position     : relative;
+  background   : #fff;
+  width        : 99px;
+  height       : 100px;
+  left         : 11.5px;
+  bottom       : 50px;
+  z-index      : 9;
+  border-radius: 25%;
+  transform    : rotate3d(1, 0, 0, 60deg);
+}
+
+.copaSombrero {
+  position             : relative;
+  background           : #000;
+  width                : 95.4px;
+  height               : 70px;
+  bottom               : 167px;
+  left                 : 12px;
+  border               : 2px solid #fff;
+  background           : #000;
+  border-radius        : 80% 80%;
+  -moz-border-radius   : 100px 100px 0 0;
+  -webkit-border-radius: 100px 100px 0 0;
+  border-radius        : 100px 100px 0 0;
+  z-index              : 9;
+  border-bottom        : transparent;
+}
+
+.camisa {
+  position     : absolute;
+  width        : 130px;
+  height       : 78%;
+  background   : transparent;
+  border-top   : 10px solid transparent;
+  border-bottom: 50px solid #000;
+  border-radius: 50%;
+  top          : 9px;
+  z-index      : 10;
+  left         : 0%;
+}
+
+.rayas {
+  position     : relative;
+  width        : 7px;
+  height       : 1px;
+  background   : #fff;
+  border-bottom: 48px solid #fff;
+  border-radius: 15px 15px 20px 20px;
+  border-top   : transparent;
+  left         : 45px;
+  top          : 137px;
+}
+
+.rayaDos {
+  position     : relative;
+  width        : 7px;
+  height       : .1px;
+  background   : #fff;
+  border-bottom: 45px solid #fff;
+  border-radius: 15px 15px 20px 20px;
+  border-top   : transparent;
+  left         : 36px;
+  top          : 2.7px;
+}
+
+.rayaTres {
+  position     : relative;
+  width        : 7px;
+  height       : 4px;
+  background   : #fff;
+  border-bottom: 49px solid #fff;
+  border-radius: 15px 15px 20px 20px;
+  bottom       : 45px;
+  left         : 19px;
+}
+
+.cuelloPrimero {
+  width     : 15px;
+  height    : 22px;
+  position  : relative;
+  background: #c6c2d0;
+  top       : 84px;
+  left      : 36px;
+  border    : 2px solid #c6c2d0;
+  clip-path : polygon(24% 34%,
+      48% 23%,
+      100% 0%,
+      100% 100%,
+      49% 100%,
+      0 100%,
+      0 47%);
+  transform: rotate(-83deg);
+}
+
+.cuelloSegundo {
+  width     : 15px;
+  height    : 25px;
+  position  : relative;
+  background: #c6c2d0;
+  top       : 68px;
+  left      : 33px;
+  border    : 2px solid #c6c2d0;
+  clip-path : polygon(24% 34%,
+      48% 23%,
+      100% 0%,
+      100% 100%,
+      49% 100%,
+      0 100%,
+      0 47%);
+  transform: rotate(-85deg);
+}
+
+.cuelloTercero {
+  width     : 15px;
+  height    : 22px;
+  position  : relative;
+  background: #c6c2d0;
+  top       : 0px;
+  left      : 78px;
+  border    : 2px solid #c6c2d0;
+  clip-path : polygon(100% 0, 69% 59%, 48% 100%, 0 100%, 0 58%, 0 0, 48% 0);
+  transform : rotate(-9deg);
+}
+
+.cuelloCuarto {
+  width     : 25px;
+  height    : 17px;
+  position  : relative;
+  background: #c6c2d0;
+  top       : -18px;
+  left      : 79px;
+  border    : 2px solid #c6c2d0;
+  clip-path : polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+  transform : rotate(-7deg);
+}
+
+.corbata {
+  height    : 14px;
+  width     : 18px;
+  top       : 35px;
+  left      : 45%;
+  position  : relative;
+  background: red;
+  clip-path : polygon(50% 100%, 0 0, 100% 0);
+  border-top: 4px solid transparent;
+  z-index   : 10;
+}
+
+.puntaCorbata {
+  position  : relative;
+  height    : 15px;
+  width     : 15px;
+  left      : 60px;
+  top       : 25px;
+  background: red;
+  clip-path : polygon(50% 100%, 100% 39%, 80% 0, 15% 0, 0 39%);
+  z-index   : 10;
+}
+
+.zapatoUno {
+  position  : relative;
+  height    : 4px;
+  width     : 80px;
+  top       : 155px;
+  right     : 35px;
+  background: #682b0c;
+}
+
+.puntaZapatoUno {
+  position     : relative;
+  background   : #000;
+  top          : -25px;
+  height       : 50px;
+  width        : 40px;
+  border-radius: 50%;
+  clip-path    : inset(0 0 50% 0);
+}
+
+.empeineZapato {
+  position     : absolute;
+  background   : #000;
+  top          : -17.6px;
+  height       : 35px;
+  width        : 70px;
+  left         : 18px;
+  border-radius: 50%;
+  clip-path    : inset(9% 0 50% 0);
+  z-index      : 1;
+}
+
+.zapatoDos {
+  position     : relative;
+  width        : 40px;
+  height       : 99px;
+  top          : 78px;
+  left         : 110px;
+  border-left  : 5.5px solid #000;
+  transform    : rotate(45deg);
+  border-radius: 50%;
+  background   : #ab5f13;
+  z-index      : 11;
+}
+
+.suelaZapatoDos {
+  position     : relative;
+  width        : 15px;
+  height       : 20px;
+  top          : 8px;
+  left         : 138px;
+  border-top   : 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform    : rotate(45deg);
+  background   : #994f00;
+  border-radius: 50%;
+  z-index      : 11;
+}
+
+.cabelloIzquierdo {
+  position     : absolute;
+  height       : 12px;
+  width        : 12px;
+  border-top   : 0.5px solid #000;
+  border-left  : 1px solid #000;
+  background   : #ded2cf;
+  border-radius: 50%;
+  bottom       : 130px;
+}
+
+.cabelloIquierdoDos {
+  position     : relative;
+  height       : 15px;
+  width        : 12px;
+  top          : -132px;
+  right        : 2.9px;
+  border-top   : 0.5px solid #000;
+  border-left  : 1px solid #000;
+  background   : #ded2cf;
+  border-radius: 50%;
+  bottom       : 130px;
+}
+
+.cabelloIzquierdoTres {
+  position     : relative;
+  height       : 15px;
+  width        : 12px;
+  top          : -139px;
+  right        : 6px;
+  border-top   : 0.5px solid #000;
+  border-left  : 1px solid #000;
+  background   : #ded2cf;
+  border-radius: 50%;
+  bottom       : 130px;
+}
+
+.cabelloDerecho {
+  position     : relative;
+  height       : 15px;
+  width        : 12px;
+  top          : -154px;
+  left         : 120px;
+  border-top   : 0.5px solid #000;
+  border-right : 1px solid #000;
+  background   : #ded2cf;
+  border-radius: 50%;
+  bottom       : 130px;
+}
+
+.cabelloDerechoDos {
+  position     : relative;
+  height       : 15px;
+  width        : 12px;
+  top          : -177px;
+  left         : 118px;
+  border-top   : 0.5px solid #000;
+  border-right : 1px solid #000;
+  background   : #ded2cf;
+  border-radius: 50%;
+  bottom       : 130px;
+}
+
+.cabelloDerechoTres {
+  position     : relative;
+  height       : 15px;
+  width        : 12px;
+  top          : -202px;
+  left         : 115px;
+  border-top   : 0.5px solid #000;
+  border-right : 1px solid #000;
+  background   : #ded2cf;
+  border-radius: 50%;
+  bottom       : 130px;
+}
+
+.brazoDrecho {
+  position     : relative;
+  height       : 80px;
+  width        : 80px;
+  background   : transparent;
+  border-radius: 50%;
+  transform    : rotate(36deg);
+  border-bottom: 9px solid #000;
+  clip-path    : inset(0 14%);
+  top          : -190px;
+  right        : 34px;
+}
+
+.mangaBrazo {
+  position  : relative;
+  height    : 15px;
+  width     : 10px;
+  bottom    : 228px;
+  background: #fff;
+  right     : 39px;
+  transform : rotate(47deg);
+}
+
+.botonManga {
+  position     : relative;
+  height       : 5px;
+  width        : 5px;
+  background   : #000;
+  border-radius: 50%;
+  top          : 10px;
+  left         : 2.4px;
+}
+
+.mano {
+  position     : relative;
+  height       : 16px;
+  width        : 16px;
+  background   : #fff;
+  border-radius: 50%;
+  bottom       : 254px;
+  right        : 49.9px;
+}
+
+.dedoUno {
+  position     : relative;
+  height       : 20px;
+  width        : 5px;
+  background   : #fff;
+  top          : -14px;
+  border-radius: 35%;
+  transform    : rotate(-45deg);
+}
+
+.dedoDos {
+  position     : relative;
+  height       : 20px;
+  width        : 5px;
+  background   : #fff;
+  top          : -28px;
+  right        : 2.8px;
+  border-radius: 35%;
+  transform    : rotate(-45deg);
+}
+
+.dedoTres {
+  position     : relative;
+  height       : 20px;
+  width        : 5px;
+  background   : #fff;
+  top          : -41px;
+  right        : 4px;
+  border-radius: 35%;
+  transform    : rotate(-60deg);
+}
+
+.dedoCuatro {
+  position     : relative;
+  height       : 14px;
+  width        : 5px;
+  background   : #fff;
+  top          : -67px;
+  left         : 9px;
+  border-radius: 35%;
+  transform    : rotate(-6deg);
+}
