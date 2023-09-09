@@ -30,7 +30,7 @@ Este proyecto es un ejemplo de cómo se puede crear una representación artísti
 
 ## Demo en Vivo
 
-Puedes ver una demostración en vivo del dibujo de "EVARISTO" [aquí](insertar-enlace-demo).
+Puedes ver una demostración en vivo del dibujo de "EVARISTO" [aquí](https://kevinrivera1.github.io/Evaristo-CSS/).
 
 ## Tecnologías Utilizadas
 
